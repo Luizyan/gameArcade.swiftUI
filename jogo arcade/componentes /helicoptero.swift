@@ -15,7 +15,7 @@ struct helicoptero: View{
     
     let heliblock: [[Color]] = [[.gray, .gray, .gray, .gray, .gray,],
                                 [.clear, .clear, .gray, .clear, .clear,],
-                                [.red, .red, .red, .blue, .black,],
+                                [.red, .red, .red, .blue, .blue,],
                                 [.clear, .clear, .red, .red, .red,],
                                 [.clear, .clear, .gray, .clear, .gray,]]
     
@@ -25,9 +25,7 @@ struct helicoptero: View{
                 HStack(spacing: 0){
                     ForEach((0...self.rows - 1), id: \.self) { col in
                         VStack{
-                            Rectangle()
-                            .frame(width: size, height: size)
-                            .foregroundColor(self.heliblock[rows][col])
+                            pixel(size: self.size, color: self.heliblock[rows][col])
                         }
                     }
                 }

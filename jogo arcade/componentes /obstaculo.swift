@@ -7,8 +7,8 @@
 
 import SwiftUI
 struct obstaculo: View {
-    let height: CGFloat = 20
-    let width: CGFloat = 200
+    let height: CGFloat = 200
+    let width: CGFloat = 20
     
     var body: some View {
         Rectangle()
