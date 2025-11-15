@@ -1,9 +1,5 @@
-//
-//  obstaculo.swift
-//  jogo arcade
-//
-//  Created by Luiz Yan on 25/09/25.
-//
+
+
 
 import SwiftUI
 struct obstaculo: View {
